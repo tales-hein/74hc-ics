@@ -52,8 +52,8 @@ gtkwave wave.vcd
 | ✅ | 74HC138 | Decodificador/demultiplexador 3 para 8 |
 | ✅ | 74HC139 | 2 decodificadores/demultiplexadores 2 para 4 |
 | ✅ | 74HC153 | 2 multiplexadores de 4 entradas |
-| ⬜ | 74HC157 | 4 multiplexadores de 2 entradas |
-| ⬜ | 74HC151 | Multiplexador de 8 entradas |
+| ✅ | 74HC157 | 4 multiplexadores de 2 entradas |
+| ✅ | 74HC151 | Multiplexador de 8 entradas |
 | ⬜ | 74HC251 | Multiplexador de 8 entradas, 3-state |
 | ⬜ | 74HC258 | 4 multiplexadores de 2 entradas, invertido, 3-state |
 
