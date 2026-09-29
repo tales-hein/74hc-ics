@@ -54,8 +54,8 @@ gtkwave wave.vcd
 | ✅ | 74HC153 | 2 multiplexadores de 4 entradas |
 | ✅ | 74HC157 | 4 multiplexadores de 2 entradas |
 | ✅ | 74HC151 | Multiplexador de 8 entradas |
-| ⬜ | 74HC251 | Multiplexador de 8 entradas, 3-state |
-| ⬜ | 74HC258 | 4 multiplexadores de 2 entradas, invertido, 3-state |
+| ✅ | 74HC251 | Multiplexador de 8 entradas, 3-state |
+| ✅ | 74HC258 | 4 multiplexadores de 2 entradas, invertido, 3-state |
 
 ### Buffers e transceptores (3-state)
 
