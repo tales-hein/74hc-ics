@@ -1,9 +1,9 @@
-# CIs 74HC em Verilog
+# ICs 74HC em Verilog
 
-Projeto pessoal para praticar Verilog modelando CIs da família lógica 74HC.
+Projeto pessoal para praticar Verilog modelando ICs da família lógica 74HC. Usei IA apenas para tirar dúvidas sem pedir código, a ideia é aprender e depois quem sabe criar algo com esses módulos demonstrando/validando que funcionam.
 A lista começa com portas lógicas básicas e avança para decodificadores, multiplexadores, aritmética e lógica sequencial.
 
-Cada CI fica em sua própria pasta:
+Cada IC fica em sua própria pasta:
 
 ```
 ic-74HCxx/
@@ -31,7 +31,7 @@ gtkwave wave.vcd
 
 ### Portas lógicas básicas
 
-| Status | CI | Descrição |
+| Status | IC | Descrição |
 | :----: | -- | --------- |
 | ✅ | 74HC00 | 4 portas NAND de 2 entradas |
 | ✅ | 74HC02 | 4 portas NOR de 2 entradas |
@@ -47,7 +47,7 @@ gtkwave wave.vcd
 
 ### Decodificadores e multiplexadores
 
-| Status | CI | Descrição |
+| Status | IC | Descrição |
 | :----: | -- | --------- |
 | ✅ | 74HC138 | Decodificador/demultiplexador 3 para 8 |
 | ✅ | 74HC139 | 2 decodificadores/demultiplexadores 2 para 4 |
@@ -59,7 +59,7 @@ gtkwave wave.vcd
 
 ### Buffers e transceptores (3-state)
 
-| Status | CI | Descrição |
+| Status | IC | Descrição |
 | :----: | -- | --------- |
 | ⬜ | 74HC125 | 4 buffers/drivers de linha, 3-state |
 | ⬜ | 74HC245 | Transceptor de barramento de 8 bits, 3-state |
@@ -67,7 +67,7 @@ gtkwave wave.vcd
 
 ### Aritmética e comparadores
 
-| Status | CI | Descrição |
+| Status | IC | Descrição |
 | :----: | -- | --------- |
 | ⬜ | 74HC85 | Comparador de magnitude de 4 bits |
 | ⬜ | 74HC283 | Somador completo binário de 4 bits |
@@ -75,7 +75,7 @@ gtkwave wave.vcd
 
 ### Flip-flops e latches
 
-| Status | CI | Descrição |
+| Status | IC | Descrição |
 | :----: | -- | --------- |
 | ⬜ | 74HC74 | 2 flip-flops D com set/reset |
 | ⬜ | 74HC273 | 8 flip-flops D com reset |
@@ -85,7 +85,7 @@ gtkwave wave.vcd
 
 ### Contadores
 
-| Status | CI | Descrição |
+| Status | IC | Descrição |
 | :----: | -- | --------- |
 | ⬜ | 74HC161 | Contador binário síncrono de 4 bits, reset assíncrono |
 | ⬜ | 74HC163 | Contador binário síncrono de 4 bits, reset síncrono |
@@ -96,7 +96,7 @@ gtkwave wave.vcd
 
 ### Registradores de deslocamento
 
-| Status | CI | Descrição |
+| Status | IC | Descrição |
 | :----: | -- | --------- |
 | ⬜ | 74HC165 | Registrador de deslocamento de 8 bits, entrada paralela/saída serial |
 | ⬜ | 74HC194 | Registrador de deslocamento universal bidirecional de 4 bits |
