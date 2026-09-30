@@ -49,9 +49,9 @@ gtkwave wave.vcd
 | :----: | -- | --------- |
 | ✅ | 74HC138 | Decodificador/demultiplexador 3 para 8 |
 | ✅ | 74HC139 | 2 decodificadores/demultiplexadores 2 para 4 |
+| ✅ | 74HC151 | Multiplexador de 8 entradas |
 | ✅ | 74HC153 | 2 multiplexadores de 4 entradas |
 | ✅ | 74HC157 | 4 multiplexadores de 2 entradas |
-| ✅ | 74HC151 | Multiplexador de 8 entradas |
 | ✅ | 74HC251 | Multiplexador de 8 entradas, 3-state |
 | ✅ | 74HC258 | 4 multiplexadores de 2 entradas, invertido, 3-state |
 
@@ -60,8 +60,8 @@ gtkwave wave.vcd
 | Status | IC | Descrição |
 | :----: | -- | --------- |
 | ✅ | 74HC125 | 4 buffers/drivers de linha, 3-state |
-| ⬜ | 74HC245 | Transceptor de barramento de 8 bits, 3-state |
-| ⬜ | 74HC541 | Buffer/driver de linha de 8 bits, 3-state |
+| ✅ | 74HC245 | Transceptor de barramento de 8 bits, 3-state |
+| ✅ | 74HC541 | Buffer/driver de linha de 8 bits, 3-state |
 
 ### Aritmética e comparadores
 
@@ -88,9 +88,9 @@ gtkwave wave.vcd
 | ⬜ | 74HC161 | Contador binário síncrono de 4 bits, reset assíncrono |
 | ⬜ | 74HC163 | Contador binário síncrono de 4 bits, reset síncrono |
 | ⬜ | 74HC393 | 2 contadores binários ripple de 4 bits |
+| ⬜ | 74HC590 | Contador binário de 8 bits com registrador de saída, 3-state |
 | ⬜ | 74HC4017 | Contador de década Johnson com 10 saídas decodificadas |
 | ⬜ | 74HC4040 | Contador binário ripple de 12 estágios |
-| ⬜ | 74HC590 | Contador binário de 8 bits com registrador de saída, 3-state |
 
 ### Registradores de deslocamento
 
