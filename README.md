@@ -41,9 +41,7 @@ gtkwave wave.vcd
 | ✅ | 74HC20 | 2 portas NAND de 4 entradas |
 | ✅ | 74HC27 | 3 portas NOR de 3 entradas |
 | ✅ | 74HC32 | 4 portas OR de 2 entradas |
-| ⬜ | 74HC86 | 4 portas XOR de 2 entradas |
-| ⬜ | 74HC14 | 6 inversores Schmitt-trigger |
-| ⬜ | 74HC132 | 4 portas NAND Schmitt-trigger de 2 entradas |
+| ✅ | 74HC86 | 4 portas XOR de 2 entradas |
 
 ### Decodificadores e multiplexadores
 
