@@ -61,7 +61,7 @@ gtkwave wave.vcd
 
 | Status | IC | Descrição |
 | :----: | -- | --------- |
-| ⬜ | 74HC125 | 4 buffers/drivers de linha, 3-state |
+| ✅ | 74HC125 | 4 buffers/drivers de linha, 3-state |
 | ⬜ | 74HC245 | Transceptor de barramento de 8 bits, 3-state |
 | ⬜ | 74HC541 | Buffer/driver de linha de 8 bits, 3-state |
 
