@@ -76,7 +76,7 @@ gtkwave wave.vcd
 | Status | IC | Descrição |
 | :----: | -- | --------- |
 | ✅ | 74HC74 | 2 flip-flops D com set/reset |
-| ⬜ | 74HC273 | 8 flip-flops D com reset |
+| ✅ | 74HC273 | 8 flip-flops D com reset |
 | ⬜ | 74HC373 | 8 latches D, 3-state |
 | ⬜ | 74HC377 | 8 flip-flops D com enable |
 | ⬜ | 74HC574 | 8 flip-flops D, 3-state |
