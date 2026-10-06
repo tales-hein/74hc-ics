@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 module tb;
-    reg mr;     // Reset (junto com sd controlamos operação normal, preset (isso "grava" o flip flop achei confuso n sei pq) e clear)
+    reg mr;           // Reset geral
     reg cp;           // Clock
     reg [7:0] d;      // Data input
     wire [7:0] q;     // Outputs
