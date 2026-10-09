@@ -1,6 +1,6 @@
 # ICs 74HC em Verilog
 
-Projeto pessoal para praticar Verilog modelando ICs da família lógica 74HC. Usei IA apenas para tirar dúvidas sem pedir código, a ideia é aprender e depois quem sabe criar algo com esses módulos demonstrando/validando que funcionam.
+Projeto pessoal para praticar Verilog modelando ICs da família lógica 74HC.
 A lista começa com portas lógicas básicas e avança para decodificadores, multiplexadores, aritmética e lógica sequencial.
 
 Cada IC fica em sua própria pasta:
@@ -42,6 +42,7 @@ gtkwave wave.vcd
 | ✅ | 74HC27 | 3 portas NOR de 3 entradas |
 | ✅ | 74HC32 | 4 portas OR de 2 entradas |
 | ✅ | 74HC86 | 4 portas XOR de 2 entradas |
+| ✅ | 74HC4078 | Porta NOR/OR de 8 entradas |
 
 ### Decodificadores e multiplexadores
 
@@ -67,9 +68,9 @@ gtkwave wave.vcd
 
 | Status | IC | Descrição |
 | :----: | -- | --------- |
-| ⬜ | 74HC85 | Comparador de magnitude de 4 bits |
-| ⬜ | 74HC283 | Somador completo binário de 4 bits |
-| ⬜ | 74HC688 | Comparador de identidade de 8 bits |
+| ✅ | 74HC85 | Comparador de magnitude de 4 bits |
+| ✅ | 74HC283 | Somador completo binário de 4 bits |
+| ✅ | 74HC688 | Comparador de identidade de 8 bits |
 
 ### Flip-flops e latches
 
@@ -77,9 +78,9 @@ gtkwave wave.vcd
 | :----: | -- | --------- |
 | ✅ | 74HC74 | 2 flip-flops D com set/reset |
 | ✅ | 74HC273 | 8 flip-flops D com reset |
-| ⬜ | 74HC373 | 8 latches D, 3-state |
-| ⬜ | 74HC377 | 8 flip-flops D com enable |
-| ⬜ | 74HC574 | 8 flip-flops D, 3-state |
+| ✅ | 74HC373 | 8 latches D, 3-state |
+| ✅ | 74HC377 | 8 flip-flops D com enable |
+| ✅ | 74HC574 | 8 flip-flops D, 3-state |
 
 ### Contadores
 
@@ -87,6 +88,8 @@ gtkwave wave.vcd
 | :----: | -- | --------- |
 | ⬜ | 74HC161 | Contador binário síncrono de 4 bits, reset assíncrono |
 | ⬜ | 74HC163 | Contador binário síncrono de 4 bits, reset síncrono |
+| ⬜ | 74HC191 | Contador binário síncrono up/down de 4 bits, carga assíncrona |
+| ⬜ | 74HC193 | Contador binário síncrono up/down de 4 bits, clocks up/down separados |
 | ⬜ | 74HC393 | 2 contadores binários ripple de 4 bits |
 | ⬜ | 74HC590 | Contador binário de 8 bits com registrador de saída, 3-state |
 | ⬜ | 74HC4017 | Contador de década Johnson com 10 saídas decodificadas |
@@ -96,8 +99,8 @@ gtkwave wave.vcd
 
 | Status | IC | Descrição |
 | :----: | -- | --------- |
-| ⬜ | 74HC165 | Registrador de deslocamento de 8 bits, entrada paralela/saída serial |
-| ⬜ | 74HC194 | Registrador de deslocamento universal bidirecional de 4 bits |
-| ⬜ | 74HC299 | Registrador universal de deslocamento/armazenamento de 8 bits, 3-state |
+| ✅ | 74HC165 | Registrador de deslocamento de 8 bits, entrada paralela/saída serial |
+| ✅ | 74HC194 | Registrador de deslocamento universal bidirecional de 4 bits |
+| ✅ | 74HC299 | Registrador universal de deslocamento/armazenamento de 8 bits, 3-state |
 
-**Total: 11 / 38 concluídos**
+**Total: 31 / 39 concluídos**
