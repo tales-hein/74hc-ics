@@ -1,0 +1,205 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2009.vpi";
+S_0x55e2bac516b0 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x55e2bac51840 .scope module, "tb" "tb" 3 2;
+ .timescale -9 -12;
+v0x55e2bacb1910_0 .var "a1", 0 0;
+v0x55e2bacb19d0_0 .var "a2", 0 0;
+v0x55e2bacb1a70_0 .var "a3", 0 0;
+v0x55e2bacb1b10_0 .var "a4", 0 0;
+v0x55e2bacb1be0_0 .var "b1", 0 0;
+v0x55e2bacb1c80_0 .var "b2", 0 0;
+v0x55e2bacb1d50_0 .var "b3", 0 0;
+v0x55e2bacb1e20_0 .var "b4", 0 0;
+v0x55e2bacb1ef0_0 .var/i "errors", 31 0;
+v0x55e2bacb2020_0 .var/i "i", 31 0;
+v0x55e2bacb20c0_0 .net "y1", 0 0, L_0x55e2bacb2480;  1 drivers
+v0x55e2bacb2190_0 .net "y2", 0 0, L_0x55e2bacb26a0;  1 drivers
+v0x55e2bacb2260_0 .net "y3", 0 0, L_0x55e2bacb28f0;  1 drivers
+v0x55e2bacb2330_0 .net "y4", 0 0, L_0x55e2bacb2b50;  1 drivers
+S_0x55e2bac94010 .scope module, "dut" "ic_74HC00" 3 12, 4 1 0, S_0x55e2bac51840;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a1";
+    .port_info 1 /INPUT 1 "b1";
+    .port_info 2 /INPUT 1 "a2";
+    .port_info 3 /INPUT 1 "b2";
+    .port_info 4 /INPUT 1 "a3";
+    .port_info 5 /INPUT 1 "b3";
+    .port_info 6 /INPUT 1 "a4";
+    .port_info 7 /INPUT 1 "b4";
+    .port_info 8 /OUTPUT 1 "y1";
+    .port_info 9 /OUTPUT 1 "y2";
+    .port_info 10 /OUTPUT 1 "y3";
+    .port_info 11 /OUTPUT 1 "y4";
+L_0x55e2bac96050 .functor AND 1, v0x55e2bacb1910_0, v0x55e2bacb1be0_0, C4<1>, C4<1>;
+L_0x55e2bacb2480 .functor NOT 1, L_0x55e2bac96050, C4<0>, C4<0>, C4<0>;
+L_0x55e2bacb2590 .functor AND 1, v0x55e2bacb19d0_0, v0x55e2bacb1c80_0, C4<1>, C4<1>;
+L_0x55e2bacb26a0 .functor NOT 1, L_0x55e2bacb2590, C4<0>, C4<0>, C4<0>;
+L_0x55e2bacb27e0 .functor AND 1, v0x55e2bacb1a70_0, v0x55e2bacb1d50_0, C4<1>, C4<1>;
+L_0x55e2bacb28f0 .functor NOT 1, L_0x55e2bacb27e0, C4<0>, C4<0>, C4<0>;
+L_0x55e2bacb2a40 .functor AND 1, v0x55e2bacb1b10_0, v0x55e2bacb1e20_0, C4<1>, C4<1>;
+L_0x55e2bacb2b50 .functor NOT 1, L_0x55e2bacb2a40, C4<0>, C4<0>, C4<0>;
+v0x55e2bac942d0_0 .net *"_ivl_0", 0 0, L_0x55e2bac96050;  1 drivers
+v0x55e2bacb0b50_0 .net *"_ivl_12", 0 0, L_0x55e2bacb2a40;  1 drivers
+v0x55e2bacb0c30_0 .net *"_ivl_4", 0 0, L_0x55e2bacb2590;  1 drivers
+v0x55e2bacb0cf0_0 .net *"_ivl_8", 0 0, L_0x55e2bacb27e0;  1 drivers
+v0x55e2bacb0dd0_0 .net "a1", 0 0, v0x55e2bacb1910_0;  1 drivers
+v0x55e2bacb0ee0_0 .net "a2", 0 0, v0x55e2bacb19d0_0;  1 drivers
+v0x55e2bacb0fa0_0 .net "a3", 0 0, v0x55e2bacb1a70_0;  1 drivers
+v0x55e2bacb1060_0 .net "a4", 0 0, v0x55e2bacb1b10_0;  1 drivers
+v0x55e2bacb1120_0 .net "b1", 0 0, v0x55e2bacb1be0_0;  1 drivers
+v0x55e2bacb11e0_0 .net "b2", 0 0, v0x55e2bacb1c80_0;  1 drivers
+v0x55e2bacb12a0_0 .net "b3", 0 0, v0x55e2bacb1d50_0;  1 drivers
+v0x55e2bacb1360_0 .net "b4", 0 0, v0x55e2bacb1e20_0;  1 drivers
+v0x55e2bacb1420_0 .net "y1", 0 0, L_0x55e2bacb2480;  alias, 1 drivers
+v0x55e2bacb14e0_0 .net "y2", 0 0, L_0x55e2bacb26a0;  alias, 1 drivers
+v0x55e2bacb15a0_0 .net "y3", 0 0, L_0x55e2bacb28f0;  alias, 1 drivers
+v0x55e2bacb1660_0 .net "y4", 0 0, L_0x55e2bacb2b50;  alias, 1 drivers
+    .scope S_0x55e2bac51840;
+T_0 ;
+    %vpi_call/w 3 29 "$dumpfile", "wave.vcd" {0 0 0};
+    %vpi_call/w 3 30 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55e2bac51840 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x55e2bac51840;
+T_1 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x55e2bacb1ef0_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x55e2bacb2020_0, 0, 32;
+T_1.0 ;
+    %load/vec4 v0x55e2bacb2020_0;
+    %cmpi/s 4, 0, 32;
+    %jmp/0xz T_1.1, 5;
+    %load/vec4 v0x55e2bacb2020_0;
+    %pad/s 2;
+    %split/vec4 1;
+    %store/vec4 v0x55e2bacb1be0_0, 0, 1;
+    %store/vec4 v0x55e2bacb1910_0, 0, 1;
+    %delay 10000, 0;
+    %load/vec4 v0x55e2bacb20c0_0;
+    %load/vec4 v0x55e2bacb1910_0;
+    %load/vec4 v0x55e2bacb1be0_0;
+    %and;
+    %inv;
+    %cmp/ne;
+    %jmp/0xz  T_1.2, 6;
+    %load/vec4 v0x55e2bacb1910_0;
+    %load/vec4 v0x55e2bacb1be0_0;
+    %and;
+    %inv;
+    %vpi_call/w 3 42 "$display", "1\302\272 nand FALHOU: t=%0t a1=%b b1=%b y1=%b expected=%b", $time, v0x55e2bacb1910_0, v0x55e2bacb1be0_0, v0x55e2bacb20c0_0, S<0,vec4,u1> {1 0 0};
+    %load/vec4 v0x55e2bacb1ef0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x55e2bacb1ef0_0, 0, 32;
+    %jmp T_1.3;
+T_1.2 ;
+    %vpi_call/w 3 46 "$display", "1\302\272 nand PASSOU: t=%0t a1=%b b1=%b y1=%b", $time, v0x55e2bacb1910_0, v0x55e2bacb1be0_0, v0x55e2bacb20c0_0 {0 0 0};
+T_1.3 ;
+    %load/vec4 v0x55e2bacb2020_0;
+    %pad/s 2;
+    %split/vec4 1;
+    %store/vec4 v0x55e2bacb1c80_0, 0, 1;
+    %store/vec4 v0x55e2bacb19d0_0, 0, 1;
+    %delay 10000, 0;
+    %load/vec4 v0x55e2bacb2190_0;
+    %load/vec4 v0x55e2bacb19d0_0;
+    %load/vec4 v0x55e2bacb1c80_0;
+    %and;
+    %inv;
+    %cmp/ne;
+    %jmp/0xz  T_1.4, 6;
+    %load/vec4 v0x55e2bacb19d0_0;
+    %load/vec4 v0x55e2bacb1c80_0;
+    %and;
+    %inv;
+    %vpi_call/w 3 53 "$display", "2\302\272 nand FALHOU: t=%0t a2=%b b2=%b y2=%b expected=%b", $time, v0x55e2bacb19d0_0, v0x55e2bacb1c80_0, v0x55e2bacb2190_0, S<0,vec4,u1> {1 0 0};
+    %load/vec4 v0x55e2bacb1ef0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x55e2bacb1ef0_0, 0, 32;
+    %jmp T_1.5;
+T_1.4 ;
+    %vpi_call/w 3 57 "$display", "2\302\272 nand PASSOU: t=%0t a2=%b b2=%b y2=%b", $time, v0x55e2bacb19d0_0, v0x55e2bacb1c80_0, v0x55e2bacb2190_0 {0 0 0};
+T_1.5 ;
+    %load/vec4 v0x55e2bacb2020_0;
+    %pad/s 2;
+    %split/vec4 1;
+    %store/vec4 v0x55e2bacb1d50_0, 0, 1;
+    %store/vec4 v0x55e2bacb1a70_0, 0, 1;
+    %delay 10000, 0;
+    %load/vec4 v0x55e2bacb2260_0;
+    %load/vec4 v0x55e2bacb1a70_0;
+    %load/vec4 v0x55e2bacb1d50_0;
+    %and;
+    %inv;
+    %cmp/ne;
+    %jmp/0xz  T_1.6, 6;
+    %load/vec4 v0x55e2bacb1a70_0;
+    %load/vec4 v0x55e2bacb1d50_0;
+    %and;
+    %inv;
+    %vpi_call/w 3 64 "$display", "3\302\272 nand FALHOU: t=%0t a3=%b b3=%b y3=%b expected=%b", $time, v0x55e2bacb1a70_0, v0x55e2bacb1d50_0, v0x55e2bacb2260_0, S<0,vec4,u1> {1 0 0};
+    %load/vec4 v0x55e2bacb1ef0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x55e2bacb1ef0_0, 0, 32;
+    %jmp T_1.7;
+T_1.6 ;
+    %vpi_call/w 3 68 "$display", "3\302\272 nand PASSOU: t=%0t a3=%b b3=%b y3=%b", $time, v0x55e2bacb1a70_0, v0x55e2bacb1d50_0, v0x55e2bacb2260_0 {0 0 0};
+T_1.7 ;
+    %load/vec4 v0x55e2bacb2020_0;
+    %pad/s 2;
+    %split/vec4 1;
+    %store/vec4 v0x55e2bacb1e20_0, 0, 1;
+    %store/vec4 v0x55e2bacb1b10_0, 0, 1;
+    %delay 10000, 0;
+    %load/vec4 v0x55e2bacb2330_0;
+    %load/vec4 v0x55e2bacb1b10_0;
+    %load/vec4 v0x55e2bacb1e20_0;
+    %and;
+    %inv;
+    %cmp/ne;
+    %jmp/0xz  T_1.8, 6;
+    %load/vec4 v0x55e2bacb1b10_0;
+    %load/vec4 v0x55e2bacb1e20_0;
+    %and;
+    %inv;
+    %vpi_call/w 3 75 "$display", "4\302\272 nand FALHOU: t=%0t a4=%b b4=%b y4=%b expected=%b", $time, v0x55e2bacb1b10_0, v0x55e2bacb1e20_0, v0x55e2bacb2330_0, S<0,vec4,u1> {1 0 0};
+    %load/vec4 v0x55e2bacb1ef0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x55e2bacb1ef0_0, 0, 32;
+    %jmp T_1.9;
+T_1.8 ;
+    %vpi_call/w 3 79 "$display", "4\302\272 nand PASSOU: t=%0t a4=%b b4=%b y4=%b", $time, v0x55e2bacb1b10_0, v0x55e2bacb1e20_0, v0x55e2bacb2330_0 {0 0 0};
+T_1.9 ;
+    %load/vec4 v0x55e2bacb2020_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x55e2bacb2020_0, 0, 32;
+    %jmp T_1.0;
+T_1.1 ;
+    %load/vec4 v0x55e2bacb1ef0_0;
+    %cmpi/e 0, 0, 32;
+    %jmp/0xz  T_1.10, 4;
+    %vpi_call/w 3 85 "$display", "TESTES PASSARAM" {0 0 0};
+    %jmp T_1.11;
+T_1.10 ;
+    %vpi_call/w 3 87 "$display", "%0d TESTE(S) FALHOU(FALHARAM)", v0x55e2bacb1ef0_0 {0 0 0};
+T_1.11 ;
+    %vpi_call/w 3 89 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "ic-74HC00-tb.v";
+    "ic-74HC00.v";

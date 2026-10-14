@@ -104,3 +104,15 @@ gtkwave wave.vcd
 | ✅ | 74HC299 | Registrador universal de deslocamento/armazenamento de 8 bits, 3-state |
 
 **Total: 39 / 39 concluídos**
+
+### Testes
+
+| Status | Descrição |
+| :----: | --------- |
+| ⬜ | Decoder de 7 segmentos |
+| ⬜ | UART transceiver |
+| ⬜ | Gerar padrões via VGA |
+| ⬜ | Animação com matriz de led via SPI |
+| ⬜ | Pong com VGA |
+
+**Total: 0 / 5 concluídos**

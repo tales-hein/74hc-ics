@@ -1,0 +1,106 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2009.vpi";
+S_0x56214d5ab610 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x56214d5ab7a0 .scope module, "tb" "tb" 3 2;
+ .timescale -9 -12;
+v0x56214d5fd690_0 .var "a", 7 0;
+v0x56214d5fd750_0 .var/i "errors", 31 0;
+v0x56214d5fd810_0 .var/i "i", 31 0;
+v0x56214d5fd8d0_0 .var "oe", 1 0;
+v0x56214d5fd990_0 .net "y", 7 0, L_0x56214d5fdc20;  1 drivers
+S_0x56214d5e8770 .scope module, "dut" "ic_74HC541" 3 10, 4 1 0, S_0x56214d5ab7a0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 2 "oe";
+    .port_info 1 /INPUT 8 "a";
+    .port_info 2 /OUTPUT 8 "y";
+L_0x7f375d4d3018 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v0x56214d5e89a0_0 .net/2u *"_ivl_0", 1 0, L_0x7f375d4d3018;  1 drivers
+v0x56214d5fd1a0_0 .net *"_ivl_2", 0 0, L_0x56214d5fdab0;  1 drivers
+o0x7f375da94078 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+; Elide local net with no drivers, v0x56214d5fd260_0 name=_ivl_4
+v0x56214d5fd320_0 .net "a", 7 0, v0x56214d5fd690_0;  1 drivers
+v0x56214d5fd400_0 .net "oe", 1 0, v0x56214d5fd8d0_0;  1 drivers
+v0x56214d5fd530_0 .net "y", 7 0, L_0x56214d5fdc20;  alias, 1 drivers
+L_0x56214d5fdab0 .cmp/eq 2, v0x56214d5fd8d0_0, L_0x7f375d4d3018;
+L_0x56214d5fdc20 .functor MUXZ 8, o0x7f375da94078, v0x56214d5fd690_0, L_0x56214d5fdab0, C4<>;
+    .scope S_0x56214d5ab7a0;
+T_0 ;
+    %vpi_call/w 3 18 "$dumpfile", "wave.vcd" {0 0 0};
+    %vpi_call/w 3 19 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x56214d5ab7a0 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x56214d5ab7a0;
+T_1 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x56214d5fd750_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x56214d5fd810_0, 0, 32;
+T_1.0 ;
+    %load/vec4 v0x56214d5fd810_0;
+    %cmpi/s 1024, 0, 32;
+    %jmp/0xz T_1.1, 5;
+    %load/vec4 v0x56214d5fd810_0;
+    %pad/s 10;
+    %split/vec4 8;
+    %store/vec4 v0x56214d5fd690_0, 0, 8;
+    %store/vec4 v0x56214d5fd8d0_0, 0, 2;
+    %delay 10000, 0;
+    %load/vec4 v0x56214d5fd8d0_0;
+    %dup/vec4;
+    %pushi/vec4 0, 0, 2;
+    %cmp/u;
+    %jmp/1 T_1.2, 6;
+    %load/vec4 v0x56214d5fd990_0;
+    %cmpi/ne 0, 255, 8;
+    %jmp/0xz  T_1.5, 6;
+    %vpi_call/w 3 34 "$display", "Output enable FALHOU: t=%0t oe=%b a=%b y=%b expected=%b", $time, v0x56214d5fd8d0_0, v0x56214d5fd690_0, v0x56214d5fd990_0, v0x56214d5fd690_0 {0 0 0};
+    %load/vec4 v0x56214d5fd750_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x56214d5fd750_0, 0, 32;
+T_1.5 ;
+    %jmp T_1.4;
+T_1.2 ;
+    %load/vec4 v0x56214d5fd990_0;
+    %load/vec4 v0x56214d5fd690_0;
+    %cmp/ne;
+    %jmp/0xz  T_1.7, 6;
+    %vpi_call/w 3 29 "$display", "Buffer FALHOU: t=%0t oe=%b a=%b y=%b expected=%b", $time, v0x56214d5fd8d0_0, v0x56214d5fd690_0, v0x56214d5fd990_0, v0x56214d5fd690_0 {0 0 0};
+    %load/vec4 v0x56214d5fd750_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x56214d5fd750_0, 0, 32;
+T_1.7 ;
+    %jmp T_1.4;
+T_1.4 ;
+    %pop/vec4 1;
+    %load/vec4 v0x56214d5fd810_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x56214d5fd810_0, 0, 32;
+    %jmp T_1.0;
+T_1.1 ;
+    %load/vec4 v0x56214d5fd750_0;
+    %cmpi/e 0, 0, 32;
+    %jmp/0xz  T_1.9, 4;
+    %vpi_call/w 3 41 "$display", "TESTES PASSARAM" {0 0 0};
+    %jmp T_1.10;
+T_1.9 ;
+    %vpi_call/w 3 43 "$display", "%0d TESTE(S) FALHOU(FALHARAM)", v0x56214d5fd750_0 {0 0 0};
+T_1.10 ;
+    %vpi_call/w 3 45 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "ic-74HC541-tb.v";
+    "ic-74HC541.v";

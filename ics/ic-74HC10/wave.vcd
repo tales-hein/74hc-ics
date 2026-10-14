@@ -1,0 +1,102 @@
+$date
+	Fri Sep 25 13:56:17 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb $end
+$var wire 1 ! y3 $end
+$var wire 1 " y2 $end
+$var wire 1 # y1 $end
+$var reg 1 $ a1 $end
+$var reg 1 % a2 $end
+$var reg 1 & a3 $end
+$var reg 1 ' b1 $end
+$var reg 1 ( b2 $end
+$var reg 1 ) b3 $end
+$var reg 1 * c1 $end
+$var reg 1 + c2 $end
+$var reg 1 , c3 $end
+$var integer 32 - errors [31:0] $end
+$var integer 32 . i [31:0] $end
+$scope module dut $end
+$var wire 1 $ a1 $end
+$var wire 1 % a2 $end
+$var wire 1 & a3 $end
+$var wire 1 ' b1 $end
+$var wire 1 ( b2 $end
+$var wire 1 ) b3 $end
+$var wire 1 * c1 $end
+$var wire 1 + c2 $end
+$var wire 1 , c3 $end
+$var wire 1 # y1 $end
+$var wire 1 " y2 $end
+$var wire 1 ! y3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 .
+b0 -
+x,
+x+
+0*
+x)
+x(
+0'
+x&
+x%
+0$
+1#
+x"
+x!
+$end
+#10000
+1"
+0+
+0%
+0(
+#20000
+1!
+0,
+0&
+0)
+#30000
+1'
+b1 .
+#40000
+1(
+#50000
+1)
+#60000
+1*
+1$
+0'
+b10 .
+#70000
+1+
+1%
+0(
+#80000
+1,
+1&
+0)
+#90000
+0#
+1'
+b11 .
+#100000
+0"
+1(
+#110000
+0!
+1)
+#120000
+b100 .
