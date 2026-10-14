@@ -86,14 +86,14 @@ gtkwave wave.vcd
 
 | Status | IC | Descrição |
 | :----: | -- | --------- |
-| ⬜ | 74HC161 | Contador binário síncrono de 4 bits, reset assíncrono |
-| ⬜ | 74HC163 | Contador binário síncrono de 4 bits, reset síncrono |
-| ⬜ | 74HC191 | Contador binário síncrono up/down de 4 bits, carga assíncrona |
-| ⬜ | 74HC193 | Contador binário síncrono up/down de 4 bits, clocks up/down separados |
-| ⬜ | 74HC393 | 2 contadores binários ripple de 4 bits |
-| ⬜ | 74HC590 | Contador binário de 8 bits com registrador de saída, 3-state |
-| ⬜ | 74HC4017 | Contador de década Johnson com 10 saídas decodificadas |
-| ⬜ | 74HC4040 | Contador binário ripple de 12 estágios |
+| ✅ | 74HC161 | Contador binário síncrono de 4 bits, reset assíncrono |
+| ✅ | 74HC163 | Contador binário síncrono de 4 bits, reset síncrono |
+| ✅ | 74HC191 | Contador binário síncrono up/down de 4 bits, carga assíncrona |
+| ✅ | 74HC193 | Contador binário síncrono up/down de 4 bits, clocks up/down separados |
+| ✅ | 74HC393 | 2 contadores binários ripple de 4 bits |
+| ✅ | 74HC590 | Contador binário de 8 bits com registrador de saída, 3-state |
+| ✅ | 74HC4017 | Contador de década Johnson com 10 saídas decodificadas |
+| ✅ | 74HC4040 | Contador binário ripple de 12 estágios |
 
 ### Registradores de deslocamento
 
@@ -103,4 +103,4 @@ gtkwave wave.vcd
 | ✅ | 74HC194 | Registrador de deslocamento universal bidirecional de 4 bits |
 | ✅ | 74HC299 | Registrador universal de deslocamento/armazenamento de 8 bits, 3-state |
 
-**Total: 31 / 39 concluídos**
+**Total: 39 / 39 concluídos**
